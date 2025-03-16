@@ -9,7 +9,7 @@ from commands import *
 
 bot = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
-# === Flask Server for Koyeb Health Check ===
+# === Flask Server pour koyeb 654ceKINGCEY ===
 app = Flask(__name__)
 
 @app.route("/")
@@ -33,5 +33,5 @@ async def main():
         await auto_send_files()
 
 if __name__ == "__main__":
-    Thread(target=run_flask).start()  # Lancer Flask en parallèle
+    Thread(target=run_flask).start()  # ici c'est pour lancer flask en parallèlle
     bot.run()
